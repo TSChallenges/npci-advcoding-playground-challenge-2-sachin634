@@ -15,6 +15,8 @@ class Patient {
         this.treatment = null;
         this.appointmentDay = null;
     }
+    
+    
 
     // Getter methods for name, age, gender, symptoms, treatment, appointmentDay
     // TODO
@@ -26,7 +28,55 @@ class Patient {
     /* The below equals() and hashCode() methods are crucial for the proper functioning of 
        collections like HashSet, HashMap, and other hash-based collections. */
 
-    // Override equals() to compare Patient objects based on name, age, and gender
+    public void setTreatment(String treatment) {
+		this.treatment = treatment;
+	}
+
+
+
+	public void setAppointmentDay(String appointmentDay) {
+		this.appointmentDay = appointmentDay;
+	}
+
+
+
+	public String getName() {
+		return name;
+	}
+
+
+
+	public int getAge() {
+		return age;
+	}
+
+
+
+	public String getGender() {
+		return gender;
+	}
+
+
+
+	public String getSymptoms() {
+		return symptoms;
+	}
+
+
+
+	public String getTreatment() {
+		return treatment;
+	}
+
+
+
+	public String getAppointmentDay() {
+		return appointmentDay;
+	}
+
+
+
+	// Override equals() to compare Patient objects based on name, age, and gender
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
